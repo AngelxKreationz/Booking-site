@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angelz Kreationzs | Braid Specialist</title>
+    <title>Angelz Kreationzs | Hair & Art</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;800&display=swap');
 
         :root {
             --hot-pink: #E61C8C; 
-            --deep-black: #050505;
+            --deep-black: #000000;
             --card-bg: #111111;
         }
 
@@ -29,24 +29,30 @@
             position: sticky; top: 0; z-index: 1000;
         }
 
-        .logo { 
-            font-family: 'Dancing Script', cursive;
-            font-size: 2rem; color: var(--hot-pink); 
-        }
+        .logo-text { font-family: 'Dancing Script', cursive; font-size: 1.5rem; color: var(--hot-pink); }
 
-        /* Hero Section */
+        /* Hero Section - Logo Front & Center */
         .hero { 
-            padding: 80px 5%; text-align: center;
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover; background-position: center;
+            padding: 60px 5% 40px 5%; 
+            text-align: center;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .hero h1 { font-size: 3.5rem; color: var(--hot-pink); margin: 0; text-transform: uppercase; }
-        .hero p { font-size: 1.2rem; margin-top: 10px; letter-spacing: 2px; }
+        .hero-logo {
+            width: 90%;
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .hero p { font-size: 1.1rem; color: #bbb; letter-spacing: 1px; margin-bottom: 25px; }
 
         /* Policy Section */
         .policy-container {
-            margin: 20px 5%; padding: 25px;
+            margin: 0 5% 30px 5%; padding: 25px;
             background: rgba(230, 28, 140, 0.05);
             border: 2px dashed var(--hot-pink);
             border-radius: 15px; text-align: center;
@@ -54,66 +60,55 @@
 
         .highlight { color: var(--hot-pink); font-weight: 800; }
 
-        /* Buttons */
         .book-btn {
             display: block; background: var(--hot-pink); color: #fff;
-            padding: 15px; text-decoration: none; border-radius: 50px;
-            font-weight: 800; margin: 20px auto; width: 80%; max-width: 300px;
+            padding: 16px; text-decoration: none; border-radius: 50px;
+            font-weight: 800; margin: 10px auto; width: 85%; max-width: 300px;
             text-align: center; text-transform: uppercase;
-            box-shadow: 0 0 15px rgba(230, 28, 140, 0.3);
-        }
-
-        .reminder-link {
-            display: inline-block; color: var(--hot-pink); font-size: 0.9rem; 
-            text-decoration: underline; margin-top: 15px;
+            box-shadow: 0 0 20px rgba(230, 28, 140, 0.4);
         }
 
         /* Pricing Grid */
         .menu-container { 
-            padding: 30px 5%; 
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; 
+            padding: 20px 5%; 
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; 
         }
         
         .category { background: var(--card-bg); border-radius: 15px; overflow: hidden; border: 1px solid #222; }
         .category-header { background: var(--hot-pink); color: #000; padding: 12px; text-align: center; font-weight: 800; text-transform: uppercase; }
         .item-list { padding: 20px; }
-        .item { display: flex; justify-content: space-between; margin-bottom: 12px; border-bottom: 1px solid #222; padding-bottom: 8px; font-size: 0.9rem; }
+        .item { display: flex; justify-content: space-between; margin-bottom: 12px; border-bottom: 1px solid #222; padding-bottom: 8px; }
         .price { color: var(--hot-pink); font-weight: 800; }
 
-        footer { text-align: center; padding: 40px; border-top: 3px solid var(--hot-pink); }
-        .footer-logo { font-family: 'Dancing Script', cursive; font-size: 2rem; color: var(--hot-pink); margin-bottom: 10px; }
+        footer { text-align: center; padding: 40px; border-top: 3px solid var(--hot-pink); margin-top: 40px; }
     </style>
 </head>
 <body>
 
     <nav>
-        <div class="logo">Angelz Kreationzs</div>
-        <a href="sms:+17068413995?&body=Hi! I want to book an appointment." style="color:var(--hot-pink); text-decoration:none; font-weight:bold;">BOOK NOW</a>
+        <div class="logo-text">Angelz Kreationzs</div>
+        <a href="sms:+17068413995" style="color:var(--hot-pink); text-decoration:none; font-weight:bold;">BOOK NOW</a>
     </nav>
 
+    <!-- Header with your Logo -->
     <section class="hero">
-        <h1>Angelz Kreationzs</h1>
-        <p>Luxury Care, Affordable Prices</p>
-        <a href="sms:+17068413995?&body=Hi Angel! I am looking to book an appointment. My name is:" class="book-btn">Text to Book Now</a>
+        <img src="logo.png" alt="Angelz Kreations Logo" class="hero-logo">
+        <p>Luxury Braid Artistry & Custom Tattooing</p>
+        <a href="sms:+17068413995?&body=Hi Angel! I want to book an appointment." class="book-btn">TEXT TO BOOK NOW</a>
     </section>
 
-    <!-- UPDATED POLICY -->
     <section class="policy-container">
         <h2 style="color:var(--hot-pink); margin-top:0;">Booking Info</h2>
-        <div style="text-align: left; max-width: 450px; margin: auto; line-height: 1.8;">
-            • Browse prices below and click <span class="highlight">"Book Now"</span> to text me.<br>
-            • A <span class="highlight">$15 Non-Refundable Deposit</span> is required to secure your spot.<br>
+        <div style="text-align: left; max-width: 450px; margin: auto; line-height: 1.8; font-size: 0.95rem;">
+            • Browse prices below and text to book.<br>
+            • A <span class="highlight">$15 Non-Refundable Deposit</span> is required.<br>
             • Payments: <span class="highlight">Cash App, Apple Pay, & Cash</span>.<br>
-            • Address sent after deposit is received.
+            • Tattoos are <span class="highlight">Mobile Only</span>.
         </div>
-        
-        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Hair+Appointment+with+Angel&details=Don't+forget+your+appointment!+Address+will+be+sent+after+deposit." target="_blank" class="reminder-link">
-            📅 Click to add a reminder to your calendar
-        </a>
     </section>
 
     <div class="menu-container">
-        <!-- 1. FEEDINS -->
+        <!-- Feedins -->
         <div class="category">
             <div class="category-header">Feedins</div>
             <div class="item-list">
@@ -121,13 +116,11 @@
                 <div class="item"><span>6 Braids</span> <span class="price">$65</span></div>
                 <div class="item"><span>8 Braids</span> <span class="price">$85</span></div>
                 <div class="item"><span>10 Braids</span> <span class="price">$100</span></div>
-                <div class="item"><span>20 Braids</span> <span class="price">$115</span></div>
                 <div class="item"><span>Designs</span> <span class="price">+$5</span></div>
-                <a href="sms:+17068413995?&body=Hi! I want to book Feedin Braids." class="book-btn" style="font-size: 0.8rem; padding: 10px;">Book Feedins</a>
             </div>
         </div>
 
-        <!-- 2. KNOTLESS -->
+        <!-- Knotless -->
         <div class="category">
             <div class="category-header">Knotless</div>
             <div class="item-list">
@@ -135,61 +128,35 @@
                 <div class="item"><span>Medium</span> <span class="price">$135</span></div>
                 <div class="item"><span>Large</span> <span class="price">$100</span></div>
                 <div class="item"><span>XL / Jumbo</span> <span class="price">$80+</span></div>
-                <div class="item"><span>Fulani Braids</span> <span class="price">$135</span></div>
-                <a href="sms:+17068413995?&body=Hi! I want to book Knotless Braids." class="book-btn" style="font-size: 0.8rem; padding: 10px;">Book Knotless</a>
             </div>
         </div>
 
-        <!-- 3. QUICK WEAVES / SEW-INS -->
+        <!-- Locs & Others -->
         <div class="category">
-            <div class="category-header">Weaves & Sew-Ins</div>
-            <div class="item-list">
-                <div class="item"><span>Fulani QW</span> <span class="price">$75</span></div>
-                <div class="item"><span>Cassie QW</span> <span class="price">$65</span></div>
-                <div class="item"><span>Traditional Sew-In</span> <span class="price">$100</span></div>
-                <div class="item"><span>Versatile Sew-In</span> <span class="price">$125</span></div>
-                <a href="sms:+17068413995?&body=Hi! I want to book a Quick Weave/Sew-in." class="book-btn" style="font-size: 0.8rem; padding: 10px;">Book Weave</a>
-            </div>
-        </div>
-
-        <!-- 4. LOCS -->
-        <div class="category">
-            <div class="category-header">Locs</div>
+            <div class="category-header">Locs & Style</div>
             <div class="item-list">
                 <div class="item"><span>Retwist & Style</span> <span class="price">$75</span></div>
                 <div class="item"><span>Soft Locs</span> <span class="price">$175</span></div>
                 <div class="item"><span>Butterfly Locs</span> <span class="price">$100</span></div>
-                <a href="sms:+17068413995?&body=Hi! I want to book Loc services." class="book-btn" style="font-size: 0.8rem; padding: 10px;">Book Locs</a>
+                <div class="item"><span>Traditional Sew-In</span> <span class="price">$100</span></div>
             </div>
         </div>
 
-        <!-- 5. BOX BRAIDS -->
-        <div class="category">
-            <div class="category-header">Box Braids</div>
+        <!-- Tattoo Section -->
+        <div class="category" style="border: 1px solid var(--hot-pink);">
+            <div class="category-header" style="background: #fff; color: #000;">Angel Inkzs</div>
             <div class="item-list">
-                <div class="item"><span>Small</span> <span class="price">$160</span></div>
-                <div class="item"><span>Medium</span> <span class="price">$120</span></div>
-                <div class="item"><span>Large</span> <span class="price">$100</span></div>
-                <a href="sms:+17068413995?&body=Hi! I want to book Box Braids." class="book-btn" style="font-size: 0.8rem; padding: 10px;">Book Box Braids</a>
-            </div>
-        </div>
-
-        <!-- 6. ADD ONS -->
-        <div class="category" style="border: 2px solid var(--hot-pink);">
-            <div class="category-header">Add Ons</div>
-            <div class="item-list">
-                <div class="item"><span>Beads / Bows / Charms</span> <span class="price">$10</span></div>
-                <div class="item"><span>Hair Included</span> <span class="price">$15+</span></div>
-                <p style="text-align:center; font-size:0.8rem; opacity:0.7;">Mention add-ons in your booking text!</p>
+                <p style="text-align:center; font-size:0.8rem; margin-bottom: 15px;">Mobile only. Custom quotes via text!</p>
+                <div class="item"><span>Small Names</span> <span class="price">$50+</span></div>
+                <div class="item"><span>Quarter Sleeve</span> <span class="price">$150+</span></div>
+                <div class="item"><span>Full Sleeve</span> <span class="price">$500+</span></div>
             </div>
         </div>
     </div>
 
     <footer>
-        <div class="footer-logo">Angelz Kreationzs</div>
-        <p>706-841-3995</p>
-        <p>Instagram: @angelxkreationz</p>
-        <p style="font-size: 0.7rem; opacity: 0.5; margin-top:20px;">Luxury Care, Affordable Prices 💋</p>
+        <p>706-841-3995 | Instagram: @angelxkreationz</p>
+        <p style="font-size: 0.7rem; opacity: 0.5;">© 2026 Angelz Kreationzs & Angel Inkzs 💋</p>
     </footer>
 
 </body>
