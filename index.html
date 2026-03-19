@@ -3,164 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angelz Kreationzs</title>
+    <title>Angelz Kreationz</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
 
         :root {
-            --hot-pink: #E61C8C; 
-            --deep-black: #000000;
+            --pink: #E61C8C; 
+            --black: #000000;
         }
 
         body { 
             font-family: 'Poppins', sans-serif; 
             margin: 0; 
-            background-color: var(--deep-black);
+            background-color: var(--black);
             color: #fff;
-        }
-
-        .hero { 
-            padding: 40px 5% 10px 5%; 
             text-align: center;
         }
 
-        .hero-logo {
-            width: 100%;
-            max-width: 450px;
-            height: auto;
+        .logo-container { padding: 40px 5% 20px 5%; }
+        .logo-img { width: 100%; max-width: 400px; height: auto; }
+
+        .booking-info {
+            padding: 20px;
+            margin: 0 10% 40px 10%;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            color: #ccc;
         }
 
-        .hero p { color: #888; letter-spacing: 1px; margin-top: 5px; }
-
-        .policy-container {
-            margin: 0 5% 30px 5%; padding: 25px;
-            border: 2px dashed var(--hot-pink);
-            border-radius: 15px; text-align: center;
+        .section-title {
+            color: var(--pink);
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 50px 0 20px 0;
         }
 
-        .highlight { color: var(--hot-pink); font-weight: 800; }
+        .menu-list {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0 10%;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .item span:first-child { font-weight: 400; font-size: 1.1rem; }
+        .price { color: var(--pink); font-weight: 800; font-size: 1.1rem; }
 
         .book-btn {
-            display: block; background: var(--hot-pink); color: #fff;
-            padding: 16px; text-decoration: none; border-radius: 50px;
-            font-weight: 800; margin: 20px auto; width: 85%; max-width: 300px;
-            text-align: center; text-transform: uppercase;
+            display: inline-block;
+            background: var(--pink);
+            color: #fff;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 800;
+            margin: 50px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .menu-container { 
-            padding: 10px 5% 40px 5%; 
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; 
+        footer {
+            padding: 60px 0;
+            color: #555;
+            font-size: 0.8rem;
+            border-top: 1px solid #1a1a1a;
         }
-        
-        .category { background: #111; border-radius: 15px; overflow: hidden; border: 1px solid #222; margin-bottom: 10px; }
-        .category-header { background: var(--hot-pink); color: #000; padding: 12px; text-align: center; font-weight: 800; text-transform: uppercase; }
-        .item-list { padding: 20px; }
-        .item { display: flex; justify-content: space-between; margin-bottom: 12px; border-bottom: 1px solid #222; padding-bottom: 8px; font-size: 0.95rem; }
-        .price { color: var(--hot-pink); font-weight: 800; }
-
-        footer { text-align: center; padding: 40px; border-top: 1px solid #222; color: #666; font-size: 0.8rem; }
     </style>
 </head>
 <body>
 
-    <section class="hero">
-        <img src="logo.png" alt="Logo" class="hero-logo">
-        <p>Luxury Hair Care, Affordable Prices</p>
-    </section>
-
-    <section class="policy-container">
-        <h2 style="color:var(--hot-pink); margin-top:0;">Booking Info</h2>
-        <div style="text-align: left; max-width: 400px; margin: auto; line-height: 1.8; font-size: 0.95rem;">
-            • Browse prices below and text to book.<br>
-            • A <span class="highlight">$15 Non-Refundable Deposit</span> is required.<br>
-            • Payments: Cash App, Apple Pay, & Cash accepted.<br>
-            • Address sent after deposit is received.
-        </div>
-        <a href="sms:+17068413995?&body=Hi Angel! I want to book a hair appointment. My name is:" class="book-btn">Text To Book Now</a>
-    </section>
-
-    <div class="menu-container">
-        
-<div class="category">
-            <div class="category-header">Feedins</div>
-            <div class="item-list">
-                <div class="item"><span>4 Braids</span> <span class="price">$45</span></div>
-                <div class="item"><span>5 Feddin Braids</span> <span class="price">$55</span></div>
-                <div class="item"><span>6 Braids</span> <span class="price">$65</span></div>
-                <div class="item"><span>8 Braids</span> <span class="price">$85</span></div>
-                <div class="item"><span>10 Braids</span> <span class="price">$100</span></div>
-                <div class="item"><span>20 Braids</span> <span class="price">$115</span></div>
-                <div class="item"><span>Designs</span> <span class="price">$5</span></div>
-            </div>
-        </div>
-
-        
-<div class="category">
-            <div class="category-header">Add Ons</div>
-            <div class="item-list">
-                <div class="item"><span>Beads</span> <span class="price">$10</span></div>
-                <div class="item"><span>Bows</span> <span class="price">$10</span></div>
-                <div class="item"><span>Charms</span> <span class="price">$10</span></div>
-                <div class="item"><span>Barrettes</span> <span class="price">$10</span></div>
-                <div class="item"><span>Hair Included</span> <span class="price">$15+</span></div>
-            </div>
-        </div>
-
-        
-<div class="category">
-            <div class="category-header">Knotless</div>
-            <div class="item-list">
-                <div class="item"><span>Small</span> <span class="price">$175</span></div>
-                <div class="item"><span>Medium</span> <span class="price">$135</span></div>
-                <div class="item"><span>Large</span> <span class="price">$100</span></div>
-                <div class="item"><span>XL</span> <span class="price">$90</span></div>
-                <div class="item"><span>Jumbo</span> <span class="price">$80</span></div>
-                <div class="item"><span>Fulani Braids</span> <span class="price">$135</span></div>
-                <div class="item"><span>Boho Hair</span> <span class="price">$25</span></div>
-            </div>
-        </div>
-
-        
-<div class="category">
-            <div class="category-header">Locs</div>
-            <div class="item-list">
-                <div class="item"><span>Retwist & Style</span> <span class="price">$75</span></div>
-                <div class="item"><span>Fulani/ Locs</span> <span class="price">$145</span></div>
-                <div class="item"><span>Soft Locs</span> <span class="price">$175</span></div>
-                <div class="item"><span>Butter Fly Locs</span> <span class="price">$100</span></div>
-                <div class="item"><span>Boho Hair</span> <span class="price">$25</span></div>
-            </div>
-        </div>
-
-        
-<div class="category">
-            <div class="category-header">Quick Weaves</div>
-            <div class="item-list">
-                <div class="item"><span>Fulani QW</span> <span class="price">$75</span></div>
-                <div class="item"><span>Cassie QW</span> <span class="price">$65</span></div>
-                <div class="item"><span>Traditional QW</span> <span class="price">$85</span></div>
-                <div class="item"><span>Traditional Sew-In</span> <span class="price">$100</span></div>
-                <div class="item"><span>Tape Ins</span> <span class="price">$60+</span></div>
-                <div class="item"><span>Versatile Sew-In</span> <span class="price">$125</span></div>
-            </div>
-        </div>
-
-        
-<div class="category">
-            <div class="category-header">Box Braids</div>
-            <div class="item-list">
-                <div class="item"><span>Small</span> <span class="price">$160</span></div>
-                <div class="item"><span>Medium</span> <span class="price">$120</span></div>
-                <div class="item"><span>Large</span> <span class="price">$100</span></div>
-                <div class="item"><span>XL</span> <span class="price">$85</span></div>
-                <div class="item"><span>Jumbo</span> <span class="price">$75</span></div>
-                <div class="item"><span>Boho Hair</span> <span class="price">$25</span></div>
-            </div>
-        </div>
+    <div class="logo-container">
+        <h1 style="color:var(--pink); font-weight:800; font-size: 2.5rem; text-transform:uppercase; letter-spacing: 2px;">
+            Angelz<br>Kreationz
+        </h1>
     </div>
 
+    <div class="booking-info">
+        $15 NON-REFUNDABLE DEPOSIT REQUIRED<br>
+        CASH APP • APPLE PAY • CASH<br>
+        ADDRESS SENT AFTER DEPOSIT
+    </div>
+
+    <div class="menu-list">
+        <div class="section-title">Feedins</div>
+        <div class="item"><span>4 Braids</span> <span class="price">$45</span></div>
+        <div class="item"><span>6 Braids</span> <span class="price">$65</span></div>
+        <div class="item"><span>8 Braids</span> <span class="price">$85</span></div>
+        <div class="item"><span>10 Braids</span> <span class="price">$100</span></div>
+        <div class="item"><span>20 Braids</span> <span class="price">$115</span></div>
+        <div class="item"><span>Designs</span> <span class="price">+$5</span></div>
+
+        <div class="section-title">Knotless</div>
+        <div class="item"><span>Small</span> <span class="price">$175</span></div>
+        <div class="item"><span>Medium</span> <span class="price">$135</span></div>
+        <div class="item"><span>Large</span> <span class="price">$100</span></div>
+        <div class="item"><span>XL / Jumbo</span> <span class="price">$80+</span></div>
+        <div class="item"><span>Fulani Braids</span> <span class="price">$135</span></div>
+
+        <div class="section-title">Locs & Weaves</div>
+        <div class="item"><span>Retwist & Style</span> <span class="price">$75</span></div>
+        <div class="item"><span>Soft Locs</span> <span class="price">$175</span></div>
+        <div class="item"><span>Butterfly Locs</span> <span class="price">$100</span></div>
+        <div class="item"><span>Traditional Sew-In</span> <span class="price">$100</span></div>
+        <div class="item"><span>Versatile Sew-In</span> <span class="price">$125</span></div>
+        <div class="item"><span>Fulani Quickweave</span> <span class="price">$75</span></div>
+        <div class="item"><span>Cassie Quickweave</span> <span class="price">$65</span></div>
+
+        <div class="section-title">Box Braids</div>
+        <div class="item"><span>Small</span> <span class="price">$160</span></div>
+        <div class="item"><span>Medium</span> <span class="price">$120</span></div>
+        <div class="item"><span>Large</span> <span class="price">$100</span></div>
+    </div>
+
+    <a href="sms:+17068413995?&body=Hi Angel! I want to book a hair appointment. My name is:" class="book-btn">Text To Book Now</a>
+
     <footer>
-        <p>706-841-3995 | Instagram: @angelxkreationz</p>
+        706-841-3995 | @angelxkreationz<br><br>
+        © 2026 ANGELZ KREATIONZ 💋
     </footer>
 
 </body>
