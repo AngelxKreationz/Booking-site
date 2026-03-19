@@ -25,12 +25,23 @@
 
         .booking-info {
             padding: 20px;
-            margin: 0 10% 40px 10%;
+            margin: 0 10% 20px 10%;
             border-top: 1px solid #333;
             border-bottom: 1px solid #333;
             font-size: 0.9rem;
             line-height: 1.8;
             color: #ccc;
+        }
+
+        .calendar-link {
+            display: inline-block;
+            color: var(--pink);
+            text-decoration: none;
+            font-size: 0.85rem;
+            margin-bottom: 30px;
+            border: 1px solid var(--pink);
+            padding: 8px 15px;
+            border-radius: 20px;
         }
 
         .section-title {
@@ -39,7 +50,7 @@
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 3px;
-            margin: 50px 0 20px 0;
+            margin: 40px 0 15px 0;
         }
 
         .menu-list {
@@ -56,8 +67,8 @@
             border-bottom: 1px solid #1a1a1a;
         }
 
-        .item span:first-child { font-weight: 400; font-size: 1.1rem; }
-        .price { color: var(--pink); font-weight: 800; font-size: 1.1rem; }
+        .item span:first-child { font-weight: 400; font-size: 1.05rem; }
+        .price { color: var(--pink); font-weight: 800; font-size: 1.05rem; }
 
         .book-btn {
             display: inline-block;
@@ -83,9 +94,8 @@
 <body>
 
     <div class="logo-container">
-        <h1 style="color:var(--pink); font-weight:800; font-size: 2.5rem; text-transform:uppercase; letter-spacing: 2px;">
-            Angelz<br>Kreationz
-        </h1>
+        <!-- If your logo.png is ready, use the <img> tag. Otherwise, this text shows: -->
+        <img src="logo.png" alt="Angelz Kreationz" class="logo-img">
     </div>
 
     <div class="booking-info">
@@ -94,9 +104,15 @@
         ADDRESS SENT AFTER DEPOSIT
     </div>
 
+    <!-- The Calendar Reminder -->
+    <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Hair+Appointment+with+Angelz+Kreationz" target="_blank" class="calendar-link">
+        📅 Click to add a reminder to your calendar
+    </a>
+
     <div class="menu-list">
         <div class="section-title">Feedins</div>
         <div class="item"><span>4 Braids</span> <span class="price">$45</span></div>
+        <div class="item"><span>5 Feddin Braids</span> <span class="price">$55</span></div>
         <div class="item"><span>6 Braids</span> <span class="price">$65</span></div>
         <div class="item"><span>8 Braids</span> <span class="price">$85</span></div>
         <div class="item"><span>10 Braids</span> <span class="price">$100</span></div>
@@ -107,22 +123,25 @@
         <div class="item"><span>Small</span> <span class="price">$175</span></div>
         <div class="item"><span>Medium</span> <span class="price">$135</span></div>
         <div class="item"><span>Large</span> <span class="price">$100</span></div>
-        <div class="item"><span>XL / Jumbo</span> <span class="price">$80+</span></div>
+        <div class="item"><span>XL</span> <span class="price">$90</span></div>
+        <div class="item"><span>Jumbo</span> <span class="price">$80</span></div>
         <div class="item"><span>Fulani Braids</span> <span class="price">$135</span></div>
+        <div class="item"><span>Boho Hair</span> <span class="price">$25</span></div>
 
         <div class="section-title">Locs & Weaves</div>
         <div class="item"><span>Retwist & Style</span> <span class="price">$75</span></div>
+        <div class="item"><span>Fulani/ Locs</span> <span class="price">$145</span></div>
         <div class="item"><span>Soft Locs</span> <span class="price">$175</span></div>
         <div class="item"><span>Butterfly Locs</span> <span class="price">$100</span></div>
         <div class="item"><span>Traditional Sew-In</span> <span class="price">$100</span></div>
         <div class="item"><span>Versatile Sew-In</span> <span class="price">$125</span></div>
-        <div class="item"><span>Fulani Quickweave</span> <span class="price">$75</span></div>
-        <div class="item"><span>Cassie Quickweave</span> <span class="price">$65</span></div>
+        <div class="item"><span>Quickweaves</span> <span class="price">$65+</span></div>
 
         <div class="section-title">Box Braids</div>
         <div class="item"><span>Small</span> <span class="price">$160</span></div>
         <div class="item"><span>Medium</span> <span class="price">$120</span></div>
         <div class="item"><span>Large</span> <span class="price">$100</span></div>
+        <div class="item"><span>Jumbo</span> <span class="price">$75</span></div>
     </div>
 
     <a href="sms:+17068413995?&body=Hi Angel! I want to book a hair appointment. My name is:" class="book-btn">Text To Book Now</a>
